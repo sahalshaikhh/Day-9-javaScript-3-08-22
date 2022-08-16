@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide And Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#show").attr("disabled",true);
+            $("#hide").click(function(){
+                (confirm("Are You Sure...?"))
+            {
+            $("#mydiv").hide(2000);
+            $(this).attr("disabled",true);
+            $("#show").attr("disabled",false);
+            }
+            });
+
+
+            $("#show").click(function(){
+                (confirm("Are You Sure...?"))
+            {
+            $("#mydiv").show(2000);
+            $(this).attr("disabled",true);
+            $("#hide").attr("disabled",false);
+            }
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <div id="mydiv" style="height: 300px; width: 300px; background-color: pink"></div> <br> <br>
+
+
+<button id="hide" >Hide</button>&nbsp;&nbsp;<button id="show">Show</button>
+
+</body>
+</html>
